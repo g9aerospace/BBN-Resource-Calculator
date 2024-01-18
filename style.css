@@ -17,18 +17,30 @@ header {
     text-align: center;
     display: flex;
     align-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 #logo {
-    width: 50px;
+    max-width: 100%; /* Add this line */
     height: auto;
     margin-right: 10px;
+}
+
+.header-link {
+    color: #3498db;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.header-link:hover {
+    text-decoration: underline;
 }
 
 .title-container {
     flex-grow: 1;
     text-align: center;
-    margin: 0 auto; /* Center the title horizontally */
+    margin: 0 auto;
 }
 
 .calculator {
