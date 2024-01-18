@@ -22,7 +22,7 @@ header {
 }
 
 #logo {
-    max-width: 100%; /* Add this line */
+    max-width: 100%;
     height: auto;
     margin-right: 10px;
 }
