@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Resource Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Resource Calculator</h1>
+        
+        <div class="input-group">
+            <label for="servers">Servers</label>
+            <input type="range" id="servers" min="0" max="10" value="0" step="1" oninput="calculateCoins()">
+            <span id="serversValue">0</span>
+        </div>
+
+        <div class="input-group">
+            <label for="memory">Memory (100 MB)</label>
+            <input type="range" id="memory" min="0" max="10000" value="0" step="100" oninput="calculateCoins()">
+            <span id="memoryValue">0</span>
+        </div>
+
+        <div class="input-group">
+            <label for="storage">Storage (100 MB)</label>
+            <input type="range" id="storage" min="0" max="20000" value="0" step="100" oninput="calculateCoins()">
+            <span id="storageValue">0</span>
+        </div>
+
+        <div class="input-group">
+            <label for="cpu">CPU (%)</label>
+            <input type="range" id="cpu" min="0" max="1000" value="0" step="50" oninput="calculateCoins()">
+            <span id="cpuValue">0</span>
+        </div>
+
+        <div class="result">
+            <h2>Coins Needed: <span id="totalCoins">0</span></h2>
+            <h2>Cost: <span id="cost">$0.00</span></h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
