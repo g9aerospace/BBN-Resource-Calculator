@@ -74,3 +74,17 @@ footer {
 footer a {
     color: #3498db;
 }
+
+button {
+    background-color: #e97502;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #fb8942;
+}
